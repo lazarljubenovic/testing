@@ -19,8 +19,9 @@ staticserver0:
 
     # build your application
     build:
-      - npm i
-      - npm run build
+      - echo "yay"
+      # - npm i
+      # - npm run build
 
     # select which files / folders to deploy
     # after the build succesfully finished
@@ -29,11 +30,11 @@ staticserver0:
     # files in folder dist without the folder
     # itself, either way make sure your nginx
     # config points to the correct folder
-    deploy: [ 'dist/~' ]
+    deploy: [ '~' ]
 
     # *optional*: which files / folders
     # to cache for the next use
-    cache: [ node_modules ]
+    # cache: [ node_modules ]
 
   # ==== how to run your application ====
   # (usually no changes needed for a static server)
